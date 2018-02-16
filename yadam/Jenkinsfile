@@ -1,0 +1,16 @@
+#!Groovy
+/** first pipeline to learn **/
+node('10.192') {
+    stage('checkot') {
+        echo "source checkout"
+    }
+    stage('build') {
+        echo "building"
+    }
+    stage('Deploy') {
+        echo "VM deploy"
+    }
+    stage('Sanity') {
+        echo "Sanity test"
+    }
+}
